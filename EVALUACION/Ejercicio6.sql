@@ -1,0 +1,3 @@
+SELECT membership_status, count(membership_status) as cantidad_de_miembros FROM get_fit_now_member
+GROUP BY membership_status
+ORDER BY cantidad_de_miembros DESC
