@@ -2,7 +2,9 @@
 /*3*/UPDATE employees SET Fax = Phone, 
                           Phone = Fax
 
-/*4(no termnadp)*/DELETE FROM playlist_track 
+/*4(no termnadp)*/
+
+DELETE FROM playlist_track 
 WHERE TrackId in (
 	SELECT TrackId FROM tracks 
 	GROUP by GenreId
